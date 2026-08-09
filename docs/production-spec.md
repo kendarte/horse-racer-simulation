@@ -64,6 +64,8 @@ The published manifest was checked for completeness:
 - Every outcome code appears exactly 45 times.
 - No missing or duplicated pair/outcome configuration.
 
+The same checks can be reproduced locally with [`tools/validate_manifest.py`](../tools/validate_manifest.py) and run automatically through the repository's GitHub Actions workflow.
+
 The human-readable [`pair-matrix.csv`](data/pair-matrix.csv) lists the 45 pairings independently of the outcome expansion.
 
 ## Evidence chain
