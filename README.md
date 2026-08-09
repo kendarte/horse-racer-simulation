@@ -55,6 +55,16 @@ flowchart TD
 
 The data mapping, movement model, and integration boundaries are explained in [`docs/architecture.md`](docs/architecture.md).
 
+## Production evidence
+
+The public data package makes the production scale auditable instead of relying on a claim:
+
+- [Complete 315-row race manifest](docs/data/race-manifest.csv)
+- [Validated 45-pair matrix](docs/data/pair-matrix.csv)
+- [Final production specification and validation rules](docs/production-spec.md)
+
+Together, the working video, manifest and C# samples show the result, the complete configuration coverage and the implementation behind it.
+
 ## Design intent
 
 The central decision was to represent race content as data and timing rules instead of duplicated scenes:
