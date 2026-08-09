@@ -1,5 +1,7 @@
 # Horse Racer Simulation
 
+[![Validate production data](https://github.com/kendarte/horse-racer-simulation/actions/workflows/validate-production-data.yml/badge.svg)](https://github.com/kendarte/horse-racer-simulation/actions/workflows/validate-production-data.yml)
+
 A deterministic Unity race simulation that generates, directs, presents, and records a complete matrix of 1v1 horse races.
 
 [View the portfolio case study and full race video](https://kendarte.github.io/projects/horse-racer/)
@@ -54,6 +56,17 @@ flowchart TD
 | Editor | [`RaceOrchestratorEditor.cs`](CodeSamples/Editor/RaceOrchestratorEditor.cs) | Custom controls and progress display for automated race batches. |
 
 The data mapping, movement model, and integration boundaries are explained in [`docs/architecture.md`](docs/architecture.md).
+
+## Production evidence
+
+The public data package makes the production scale auditable instead of relying on a claim:
+
+- [Complete 315-row race manifest](docs/data/race-manifest.csv)
+- [Validated 45-pair matrix](docs/data/pair-matrix.csv)
+- [Final production specification and validation rules](docs/production-spec.md)
+- [Reproducible manifest validator](tools/validate_manifest.py)
+
+Together, the working video, manifest and C# samples show the result, the complete configuration coverage and the implementation behind it.
 
 ## Design intent
 

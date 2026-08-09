@@ -1,0 +1,25 @@
+name: Validate production data
+
+on:
+  push:
+    paths:
+      - "docs/data/**"
+      - "tools/validate_manifest.py"
+      - ".github/workflows/validate-production-data.yml"
+  pull_request:
+    paths:
+      - "docs/data/**"
+      - "tools/validate_manifest.py"
+      - ".github/workflows/validate-production-data.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Validate 315-race manifest
+        run: python3 tools/validate_manifest.py
