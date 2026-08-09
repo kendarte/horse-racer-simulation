@@ -2,7 +2,7 @@
 
 A deterministic Unity race simulation that generates, directs, presents, and records a complete matrix of 1v1 horse races.
 
-[View the portfolio case study and full race video](https://kendall-angulo-portfolio.tekusamirai.chatgpt.site/projects/horse-racer)
+[View the portfolio case study and full race video](https://kendarte.github.io/projects/horse-racer/)
 
 ## Project at a glance
 
@@ -66,6 +66,12 @@ The central decision was to represent race content as data and timing rules inst
 
 The orchestrator gives the movement, camera, animation, UI, and recording systems one shared race definition.
 
+## Verified result
+
+The [portfolio case study](https://kendarte.github.io/projects/horse-racer/) includes the complete race video. It shows configured competitors, duration-based movement, progress-driven camera changes, finish presentation, and the recorded result working together in Unity.
+
+This was an independently developed project. Kendall Angulo Jhonson designed and programmed the race orchestration, movement, cinematic direction, editor tooling, track generation, presentation, and automated capture workflow.
+
 ## Repository scope
 
 This is a focused code-sample repository, not a standalone Unity project. It intentionally excludes models, animations, audio, scenes, commercial assets, and third-party packages.
@@ -81,6 +87,6 @@ Integration notes:
 ## Author
 
 Kendall Angulo Jhonson — Unity Gameplay & Systems Developer  
-[Portfolio](https://kendall-angulo-portfolio.tekusamirai.chatgpt.site) · [LinkedIn](https://www.linkedin.com/in/kendall-angulo-jhonson-b46326140/)
+[Portfolio](https://kendarte.github.io/) · [LinkedIn](https://www.linkedin.com/in/kendall-angulo-jhonson-b46326140/)
 
 See [`NOTICE.md`](NOTICE.md) for repository usage terms.
